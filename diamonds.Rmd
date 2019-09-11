@@ -1,0 +1,80 @@
+---
+title: "Diamonds"
+author: "Stefani Rmalho"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    social: menu
+    theme: yeti 
+    source_code: "https://github.com/stefaniramalho/diamonds"
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+source("graficos.R")
+```
+
+Análise Exploratória {data-icon="fas fa-chart-line"}
+===================================== 
+
+Row 
+-----------------------------------------------------------------------
+
+### Distribuição de Frequencia de Price
+
+```{r}
+p1
+```
+
+### Matriz de Correlações
+
+```{r}
+p2
+```
+
+### Relação entre Carat x Price
+
+```{r}
+p3
+```
+
+### Boxplot de Price por Cut
+
+```{r}
+p4
+```
+
+Row 
+-----------------------------------------------------------------------
+
+### Distribuição de Frequencia por Color
+
+```{r}
+p5
+```
+
+### Distribuição de Frequencia por Cut
+
+```{r}
+p6
+```
+
+### Estatística Descritiva {.no-mobile}
+
+```{r, fig.width=12.15}
+p7
+```
+
+
+Estatística {data-icon="fa-table"}
+=====================================  
+
+Row 
+-------------------------------------
+### Dataset Diamonds {.no-mobile}
+
+
+```{r}
+tabela
+```
